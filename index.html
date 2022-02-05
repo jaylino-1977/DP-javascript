@@ -5,20 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javacript Assignment 1.6</title>
+    <link rel="stylesheet" href="project.css">
     <script src="dp.js"></script>
     
 </head>
 <body>
-    
+    <Header></Header>
 <h1>Hello Mr. Macias</h1>        
 
-    <script>
-
+<script>
 document.write(611+2)
+</script>
+<br>
+<br>
+<button onmouseover="showDate()">Check font size</button>
 
+<script>
+    function showDate() {
+      document.getElementById("main").innerHTML = Date();
+    }
     </script>
-
-
-
+<p id="main"></p>
+<br>
+<br>
+<script>
+    var font = myFunction(4, 4);
+    document.getElementById("main").innerHTML = font;
+    
+    function myFunction(l, m) {
+      return l * m;
+    }
+    </script>
 </body>
 </html>

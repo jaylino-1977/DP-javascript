@@ -21,3 +21,29 @@ const camera = {type:"Mirrorless", model:"CanonR6", color:"black"};
 
 
 console.log(graphics); 
+
+// ******************************* Module 3 Assignment ******************************* //
+
+ //functions//
+function gallery (fonts, graphics, logos) {
+    return fonts + graphics + logos; 
+ }
+ function gallery2 (fonts1, graphics1, logos1) {
+
+   return fonts1 + graphics1 + logos1; 
+ }
+//objects with properties//
+ const font = {typeface: "Arial", weight: "16px", color:"black"}
+ const graphic = {type: "vector" }
+ const graphic = {type: "raster"}
+
+ //method//
+ const font = {
+   fontName: "Arial",
+   fontweight : "16",
+   color     : "black",
+   fontFamily : function() {
+     return this.fontName + this.fontweight + this.color;
+   }
+ };
+
